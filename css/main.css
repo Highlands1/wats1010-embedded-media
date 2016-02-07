@@ -42,7 +42,7 @@ a:hover {
 
 /* selected link */
 a:active {
-    color: lightblue;
+    color: blue;
 }
 
 .main-nav li{
