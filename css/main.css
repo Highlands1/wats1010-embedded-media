@@ -4,7 +4,108 @@
  *
  * Site Styles
  *****************************************************************************/
+html{
+  padding: 0;
+  background-color: gray;
+}
 
- html {
-     color: green;
- }
+h1{
+  margin: 0;
+  visibility: hidden;
+}
+header{
+  min-height: 400px;
+  background-image: url('../img/monkaa_title.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: white;
+  font-size: 20px;
+}
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: yellow;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+.main-nav li{
+  list-style-type: none;
+}
+#social{
+  background: clear;
+  position: fixed;
+  top: 50px;
+  right: 0px;
+  width: 25px;
+  transition: 3s width; 
+}
+#social:hover {
+  width: 225px;
+}
+#social ul{
+  list-style-type: none;
+  padding: 0; 
+}
+#social li{
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+video {
+  float: left;
+  padding-right: 25px;
+}
+#about{
+  background: orange;
+}
+#about {
+  clear: both;
+  color: pink;
+  border: 10px solid pink;
+  border-image: repeating-linear-gradient( 45deg, pink, pink 1%, purple 1%, purple 8%) 10;
+}
+
+#about:hover {
+  border-image: repeating-linear-gradient( 45deg, purple, purple 1%, pink 1%, pink 8%) 10;
+  color: purple;
+}
+.weybec-people li{
+  list-style-type: none;
+}
+.weybec-people{
+    display: flex ;
+    flex-direction: row ;
+    flex-wrap: wrap ;
+    justify-content: space-around ;
+    align-items: center ;
+    align-content: center ;
+}
+.lead{
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.headshot:hover{
+  opacity: .3;
+  cursor: pointer;
+  }
+footer{
+  background: green;
+}
